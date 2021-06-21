@@ -1,0 +1,14 @@
+<p>listado</p>
+
+<button (click)= "eliminar()">Eliminar</button>
+<div *ngif="heroeEliminado != ''; ">
+    <h3>Heroe Eliminado</h3>
+    <span>
+        {{heroeEliminado}}
+    </span>
+</div>
+<ul>
+    <li *ngFor="let heroe of heroes; let i = index">
+        {{i}}--{{heroe}}
+    </li>
+</ul>
